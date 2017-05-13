@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="place_entrykeys">
+        <item>現在地(GPSにより取得)</item>
+        <item>登録地点(下で指定した座標)</item>
+        <item>前回測位した地点</item>
+    </string-array>
+    <string-array name="place_entryvalues">
+        <item>here</item>
+        <item>home</item>
+        <item>pre</item>
+    </string-array>
+
+</resources><!-- Copyright 2014 (c) YA <ya.androidapp@gmail.com> All rights reserved. -->

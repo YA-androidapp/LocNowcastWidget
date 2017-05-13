@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ListPreference
+        android:defaultValue="here"
+        android:dialogTitle="@string/place"
+        android:entries="@array/place_entrykeys"
+        android:entryValues="@array/place_entryvalues"
+        android:key="pref_place"
+        android:summary="@string/place_summary"
+        android:title="@string/place" />
+
+    <PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/reload" >
+        <PreferenceCategory
+            android:key="reload"
+            android:title="@string/reload" >
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:dialogTitle="@string/notification_onreload"
+                android:key="pref_notification_onreload"
+                android:summary="@string/notification_onreload_summary"
+                android:title="@string/notification_onreload" />
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:dialogTitle="@string/getweather_onlocationchanged"
+                android:key="pref_getweather_onlocationchanged"
+                android:summary="@string/getweather_onlocationchanged_summary"
+                android:title="@string/getweather_onlocationchanged" />
+
+            <EditTextPreference
+                android:defaultValue="600"
+                android:dialogTitle="@string/mintime"
+                android:inputType="numberSigned"
+                android:key="pref_mintime"
+                android:maxLength="4"
+                android:summary="@string/mintime_summary"
+                android:title="@string/mintime" />
+            <EditTextPreference
+                android:defaultValue="10"
+                android:dialogTitle="@string/mindistance"
+                android:inputType="numberSigned"
+                android:key="pref_mindistance"
+                android:maxLength="4"
+                android:summary="@string/mindistance_summary"
+                android:title="@string/mindistance" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/home" >
+        <PreferenceCategory
+            android:key="home"
+            android:title="@string/home" >
+            <EditTextPreference
+                android:defaultValue="35.681382"
+                android:dialogTitle="@string/home_lat"
+                android:inputType="numberDecimal"
+                android:key="pref_lat"
+                android:summary="@string/home_lat_summary"
+                android:title="@string/home_lat" />
+            <EditTextPreference
+                android:defaultValue="139.766084"
+                android:dialogTitle="@string/home_long"
+                android:inputType="numberDecimal"
+                android:key="pref_long"
+                android:summary="@string/home_long_summary"
+                android:title="@string/home_long" />
+
+            <PreferenceScreen
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:title="@string/pre" >
+                <PreferenceCategory
+                    android:key="pre"
+                    android:title="@string/pre" >
+                    <EditTextPreference
+                        android:defaultValue="35.681382"
+                        android:dialogTitle="@string/pre_lat"
+                        android:inputType="numberDecimal"
+                        android:key="pref_pre_lat"
+                        android:summary="@string/pre_lat_summary"
+                        android:title="@string/pre_lat" />
+                    <EditTextPreference
+                        android:defaultValue="139.766084"
+                        android:dialogTitle="@string/pre_long"
+                        android:inputType="numberDecimal"
+                        android:key="pref_pre_long"
+                        android:summary="@string/pre_long_summary"
+                        android:title="@string/pre_long" />
+                </PreferenceCategory>
+            </PreferenceScreen>
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/font" >
+        <PreferenceCategory
+            android:key="font"
+            android:title="@string/font" >
+            <PreferenceScreen
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:title="@string/fontcolor_colorcode" >
+                <PreferenceCategory
+                    android:key="fontcolor_colorcode"
+                    android:title="@string/fontcolor_colorcode" >
+                    <PreferenceScreen
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:title="@string/fontcolor_colorcode_nc" >
+                        <PreferenceCategory
+                            android:key="fontcolor_colorcode_nc"
+                            android:title="@string/fontcolor_colorcode_nc" >
+                            <EditTextPreference
+                                android:defaultValue="#b40068"
+                                android:key="pref_fontcolor_colorcode_80"
+                                android:maxLength="9"
+                                android:title="@string/fontcolor_colorcode_80" />
+                            <EditTextPreference
+                                android:defaultValue="#ff0000"
+                                android:key="pref_fontcolor_colorcode_50"
+                                android:maxLength="9"
+                                android:title="@string/fontcolor_colorcode_50" />
+                            <EditTextPreference
+                                android:defaultValue="#ff9900"
+                                android:key="pref_fontcolor_colorcode_30"
+                                android:maxLength="9"
+                                android:title="@string/fontcolor_colorcode_30" />
+                            <EditTextPreference
+                                android:defaultValue="#faf500"
+                                android:key="pref_fontcolor_colorcode_20"
+                                android:maxLength="9"
+                                android:title="@string/fontcolor_colorcode_20" />
+                            <EditTextPreference
+                                android:defaultValue="#0041ff"
+                                android:key="pref_fontcolor_colorcode_10"
+                                android:maxLength="9"
+                                android:title="@string/fontcolor_colorcode_10" />
+                            <EditTextPreference
+                                android:defaultValue="#218cff"
+                                android:key="pref_fontcolor_colorcode_5"
+                                android:maxLength="9"
+                                android:title="@string/fontcolor_colorcode_5" />
+                            <EditTextPreference
+                                android:defaultValue="#c0ffff"
+                                android:key="pref_fontcolor_colorcode_1"
+                                android:maxLength="9"
+                                android:title="@string/fontcolor_colorcode_1" />
+                            <EditTextPreference
+                                android:defaultValue="#d2d2d2"
+                                android:key="pref_fontcolor_colorcode_0"
+                                android:maxLength="9"
+                                android:title="@string/fontcolor_colorcode_0" />
+                            <EditTextPreference
+                                android:defaultValue="#000000"
+                                android:key="pref_fontcolor_colorcode_minus1"
+                                android:maxLength="9"
+                                android:title="@string/fontcolor_colorcode_minus1" />
+                        </PreferenceCategory>
+                    </PreferenceScreen>
+                    <PreferenceScreen
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:title="@string/iconcolor_colorcode_nc" >
+                        <PreferenceCategory
+                            android:key="iconcolor_colorcode_nc"
+                            android:title="@string/iconcolor_colorcode_nc" >
+                            <EditTextPreference
+                                android:defaultValue="#b40068"
+                                android:key="pref_iconcolor_colorcode_80"
+                                android:maxLength="9"
+                                android:title="@string/iconcolor_colorcode_80" />
+                            <EditTextPreference
+                                android:defaultValue="#ff0000"
+                                android:key="pref_iconcolor_colorcode_50"
+                                android:maxLength="9"
+                                android:title="@string/iconcolor_colorcode_50" />
+                            <EditTextPreference
+                                android:defaultValue="#ff9900"
+                                android:key="pref_iconcolor_colorcode_30"
+                                android:maxLength="9"
+                                android:title="@string/iconcolor_colorcode_30" />
+                            <EditTextPreference
+                                android:defaultValue="#faf500"
+                                android:key="pref_iconcolor_colorcode_20"
+                                android:maxLength="9"
+                                android:title="@string/iconcolor_colorcode_20" />
+                            <EditTextPreference
+                                android:defaultValue="#0041ff"
+                                android:key="pref_iconcolor_colorcode_10"
+                                android:maxLength="9"
+                                android:title="@string/iconcolor_colorcode_10" />
+                            <EditTextPreference
+                                android:defaultValue="#218cff"
+                                android:key="pref_iconcolor_colorcode_5"
+                                android:maxLength="9"
+                                android:title="@string/iconcolor_colorcode_5" />
+                            <EditTextPreference
+                                android:defaultValue="#c0ffff"
+                                android:key="pref_iconcolor_colorcode_1"
+                                android:maxLength="9"
+                                android:title="@string/iconcolor_colorcode_1" />
+                            <EditTextPreference
+                                android:defaultValue="#d2d2d2"
+                                android:key="pref_iconcolor_colorcode_0"
+                                android:maxLength="9"
+                                android:title="@string/iconcolor_colorcode_0" />
+                            <EditTextPreference
+                                android:defaultValue="#000000"
+                                android:key="pref_iconcolor_colorcode_minus1"
+                                android:maxLength="9"
+                                android:title="@string/iconcolor_colorcode_minus1" />
+                        </PreferenceCategory>
+                    </PreferenceScreen>
+                    <PreferenceScreen
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:title="@string/fontcolor_colorcode_wr" >
+                        <PreferenceCategory
+                            android:key="fontcolor_colorcode_wr"
+                            android:title="@string/fontcolor_colorcode_wr" >
+                            <EditTextPreference
+                                android:defaultValue="#660000"
+                                android:key="pref_fontcolor_colorcode_wr_100"
+                                android:maxLength="9"
+                                android:title="@string/fontcolor_colorcode_wr_100" />
+                            <EditTextPreference
+                                android:defaultValue="#CC0000"
+                                android:key="pref_fontcolor_colorcode_wr_80"
+                                android:maxLength="9"
+                                android:title="@string/fontcolor_colorcode_wr_80" />
+                            <EditTextPreference
+                                android:defaultValue="#FF6666"
+                                android:key="pref_fontcolor_colorcode_wr_60"
+                                android:maxLength="9"
+                                android:title="@string/fontcolor_colorcode_wr_60" />
+                            <EditTextPreference
+                                android:defaultValue="#FF99FF"
+                                android:key="pref_fontcolor_colorcode_wr_40"
+                                android:maxLength="9"
+                                android:title="@string/fontcolor_colorcode_wr_40" />
+                            <EditTextPreference
+                                android:defaultValue="#FFCC33"
+                                android:key="pref_fontcolor_colorcode_wr_30"
+                                android:maxLength="9"
+                                android:title="@string/fontcolor_colorcode_wr_30" />
+                            <EditTextPreference
+                                android:defaultValue="#FFFF99"
+                                android:key="pref_fontcolor_colorcode_wr_20"
+                                android:maxLength="9"
+                                android:title="@string/fontcolor_colorcode_wr_20" />
+                            <EditTextPreference
+                                android:defaultValue="#33FF99"
+                                android:key="pref_fontcolor_colorcode_wr_10"
+                                android:maxLength="9"
+                                android:title="@string/fontcolor_colorcode_wr_10" />
+                            <EditTextPreference
+                                android:defaultValue="#0099FF"
+                                android:key="pref_fontcolor_colorcode_wr_5"
+                                android:maxLength="9"
+                                android:title="@string/fontcolor_colorcode_wr_5" />
+                            <EditTextPreference
+                                android:defaultValue="#66CCFF"
+                                android:key="pref_fontcolor_colorcode_wr_1"
+                                android:maxLength="9"
+                                android:title="@string/fontcolor_colorcode_wr_1" />
+                            <EditTextPreference
+                                android:defaultValue="#CCFFFF"
+                                android:key="pref_fontcolor_colorcode_wr_0"
+                                android:maxLength="9"
+                                android:title="@string/fontcolor_colorcode_wr_0" />
+                            <EditTextPreference
+                                android:defaultValue="#000000"
+                                android:key="pref_fontcolor_colorcode_wr_minus1"
+                                android:maxLength="9"
+                                android:title="@string/fontcolor_colorcode_wr_minus1" />
+                        </PreferenceCategory>
+                    </PreferenceScreen>
+                    <PreferenceScreen
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:title="@string/iconcolor_colorcode_wr" >
+                        <PreferenceCategory
+                            android:key="iconcolor_colorcode_wr"
+                            android:title="@string/iconcolor_colorcode_wr" >
+                            <EditTextPreference
+                                android:defaultValue="#660000"
+                                android:key="pref_iconcolor_colorcode_wr_100"
+                                android:maxLength="9"
+                                android:title="@string/iconcolor_colorcode_wr_100" />
+                            <EditTextPreference
+                                android:defaultValue="#CC0000"
+                                android:key="pref_iconcolor_colorcode_wr_80"
+                                android:maxLength="9"
+                                android:title="@string/iconcolor_colorcode_wr_80" />
+                            <EditTextPreference
+                                android:defaultValue="#FF6666"
+                                android:key="pref_iconcolor_colorcode_wr_60"
+                                android:maxLength="9"
+                                android:title="@string/iconcolor_colorcode_wr_60" />
+                            <EditTextPreference
+                                android:defaultValue="#FF99FF"
+                                android:key="pref_iconcolor_colorcode_wr_40"
+                                android:maxLength="9"
+                                android:title="@string/iconcolor_colorcode_wr_40" />
+                            <EditTextPreference
+                                android:defaultValue="#FFCC33"
+                                android:key="pref_iconcolor_colorcode_wr_30"
+                                android:maxLength="9"
+                                android:title="@string/iconcolor_colorcode_wr_30" />
+                            <EditTextPreference
+                                android:defaultValue="#FFFF99"
+                                android:key="pref_iconcolor_colorcode_wr_20"
+                                android:maxLength="9"
+                                android:title="@string/iconcolor_colorcode_wr_20" />
+                            <EditTextPreference
+                                android:defaultValue="#33FF99"
+                                android:key="pref_iconcolor_colorcode_wr_10"
+                                android:maxLength="9"
+                                android:title="@string/iconcolor_colorcode_wr_10" />
+                            <EditTextPreference
+                                android:defaultValue="#0099FF"
+                                android:key="pref_iconcolor_colorcode_wr_5"
+                                android:maxLength="9"
+                                android:title="@string/iconcolor_colorcode_wr_5" />
+                            <EditTextPreference
+                                android:defaultValue="#66CCFF"
+                                android:key="pref_iconcolor_colorcode_wr_1"
+                                android:maxLength="9"
+                                android:title="@string/iconcolor_colorcode_wr_1" />
+                            <EditTextPreference
+                                android:defaultValue="#CCFFFF"
+                                android:key="pref_iconcolor_colorcode_wr_0"
+                                android:maxLength="9"
+                                android:title="@string/iconcolor_colorcode_wr_0" />
+                            <EditTextPreference
+                                android:defaultValue="#000000"
+                                android:key="pref_iconcolor_colorcode_wr_minus1"
+                                android:maxLength="9"
+                                android:title="@string/iconcolor_colorcode_wr_minus1" />
+                        </PreferenceCategory>
+                    </PreferenceScreen>
+                </PreferenceCategory>
+            </PreferenceScreen>
+            <PreferenceScreen
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:title="@string/fontcolor_footer" >
+                <PreferenceCategory
+                    android:key="fontcolor_footer"
+                    android:title="@string/fontcolor_footer" >
+                    <EditTextPreference
+                        android:defaultValue="#666666"
+                        android:key="pref_fontcolor_footer_latlong"
+                        android:maxLength="9"
+                        android:title="@string/fontcolor_footer_latlong" />
+                    <EditTextPreference
+                        android:defaultValue="#0000ff"
+                        android:key="pref_fontcolor_footer_start"
+                        android:maxLength="9"
+                        android:title="@string/fontcolor_footer_start" />
+                    <EditTextPreference
+                        android:defaultValue="#ff0000"
+                        android:key="pref_fontcolor_footer_error"
+                        android:maxLength="9"
+                        android:title="@string/fontcolor_footer_error" />
+                </PreferenceCategory>
+            </PreferenceScreen>
+
+            <EditTextPreference
+                android:defaultValue="12"
+                android:dialogTitle="@string/fontsize"
+                android:inputType="numberDecimal"
+                android:key="pref_fontsize"
+                android:maxLength="4"
+                android:title="@string/fontsize" />
+            <EditTextPreference
+                android:defaultValue="#bbbbbb"
+                android:key="pref_bgcolor"
+                android:maxLength="9"
+                android:title="@string/bgcolor" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/view" >
+        <PreferenceCategory
+            android:key="view"
+            android:title="@string/view" >
+            <EditTextPreference
+                android:defaultValue="10"
+                android:inputType="number"
+                android:key="pref_icon_dif"
+                android:maxLength="4"
+                android:title="@string/icon_dif" />
+            <EditTextPreference
+                android:defaultValue="3"
+                android:key="pref_latlong_decimal"
+                android:maxLength="1"
+                android:title="@string/latlong_decimal" />
+
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:dialogTitle="@string/gravity"
+                android:key="pref_gravity"
+                android:title="@string/gravity" />
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:dialogTitle="@string/view_footer_gettime"
+                android:key="pref_view_footer_gettime"
+                android:title="@string/view_footer_gettime" />
+
+            <PreferenceScreen
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:title="@string/view_footer_revgeocoding" >
+                <PreferenceCategory
+                    android:key="view_footer_revgeocoding"
+                    android:title="@string/view_footer_revgeocoding" >
+                    <CheckBoxPreference
+                        android:defaultValue="false"
+                        android:dialogTitle="@string/view_footer_revgeocoding_p"
+                        android:key="pref_view_footer_revgeocoding_p"
+                        android:title="@string/view_footer_revgeocoding_p" />
+                    <CheckBoxPreference
+                        android:defaultValue="true"
+                        android:dialogTitle="@string/view_footer_revgeocoding_m"
+                        android:key="pref_view_footer_revgeocoding_m"
+                        android:title="@string/view_footer_revgeocoding_m" />
+                    <CheckBoxPreference
+                        android:defaultValue="true"
+                        android:dialogTitle="@string/view_footer_revgeocoding_s"
+                        android:key="pref_view_footer_revgeocoding_s"
+                        android:title="@string/view_footer_revgeocoding_s" />
+                </PreferenceCategory>
+            </PreferenceScreen>
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/source" >
+        <PreferenceCategory
+            android:key="source"
+            android:title="@string/source" >
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:dialogTitle="@string/source_weatherreport"
+                android:key="pref_source_weatherreport"
+                android:summary="@string/source_weatherreport_summary"
+                android:title="@string/source_weatherreport" />
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:dialogTitle="@string/use_radame"
+                android:key="pref_use_radame"
+                android:summary="@string/use_radame_summary"
+                android:title="@string/use_radame" />
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:dialogTitle="@string/use_revgeocoding"
+                android:key="pref_use_revgeocoding"
+                android:summary="@string/use_revgeocoding_summary"
+                android:title="@string/use_revgeocoding" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/copyright" >
+        <PreferenceScreen
+            android:key="setting_link_play"
+            android:title="@string/intent_play" >
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="setting_link_share"
+            android:title="@string/intent_share" >
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="setting_link_nowcast"
+            android:title="@string/intent_nowcast" >
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="setting_link_hrnowcast"
+            android:title="@string/intent_hrnowcast" >
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="setting_link_revgeocoding"
+            android:title="@string/intent_revgeocoding" >
+        </PreferenceScreen>
+    </PreferenceScreen>
+
+</PreferenceScreen> <!-- Copyright 2014 (c) YA <ya.androidapp@gmail.com> All rights reserved. -->
